@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "docs": "vite build",
-    "build": "node generate"
+    "build": "node generate",
+    "publish:eik": "eik publish && eik pkg-alias"
   },
   "devDependencies": {
     "@eik/cli": "^2.0.14",
