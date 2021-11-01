@@ -6,7 +6,7 @@
     <section class="m-16 lg:m-64 md:grid gap-y-48 gap-x-32 color-grid">
       <template v-for="palette in paletteList" :key="palette.name">
         <h1 class="h4 lg:h3 text-right md:self-center">{{ palette.name }}</h1>
-        <div class="w-full grid grid-cols-3 md:grid-cols-5 lg:grid-cols-10 gap-8">
+        <div class="w-full grid md:grid-cols-4 lg:grid-cols-8 gap-8">
           <swatch v-for="c in palette.colors" :group="palette.colors" :group-title="palette.name" :key="c.hex" :hex="c.hex" :weight="c.weight" :name="c.name"  />
         </div>
       </template>
