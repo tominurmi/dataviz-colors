@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "docs": "vite build",
+    "docs": "vite build && cp CNAME dist",
     "build": "node generate",
     "publish:eik": "eik publish && eik pkg-alias"
   },
